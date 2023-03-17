@@ -1,0 +1,15 @@
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\bin\Release\net5.0\DAL_B3.deps.json
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\bin\Release\net5.0\DAL_B3.runtimeconfig.json
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\bin\Release\net5.0\DAL_B3.runtimeconfig.dev.json
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\bin\Release\net5.0\DAL_B3.dll
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\bin\Release\net5.0\DAL_B3.pdb
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\DAL_B3.csproj.AssemblyReference.cache
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\DAL_B3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\DAL_B3.AssemblyInfoInputs.cache
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\DAL_B3.AssemblyInfo.cs
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\DAL_B3.csproj.CoreCompileInputs.cache
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\DAL_B3.dll
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\refint\DAL_B3.dll
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\DAL_B3.pdb
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\DAL_B3.genruntimeconfig.cache
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\DAL_B3\obj\Release\net5.0\ref\DAL_B3.dll

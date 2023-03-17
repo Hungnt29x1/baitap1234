@@ -1,0 +1,153 @@
+﻿@model IEnumerable<DAL_B3.DomainClass.Group>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form>
+    <div class="row m-b-30">
+        <div class="row">
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="Mời bạn nhập..." id="keyword" name="keyword">
+            </div>
+            <div class="col-3">
+                <select class="form-control" id="filter" name="filter" asp-items="@ViewBag.isStatus">
+                    <option selected>Mời bạn chọn</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <input type="submit" value="Tìm" class="btn btn-success" />
+            </div>
+        </div>
+        <div class="col" style="text-align: end;">
+            <a class="btn btn-primary" asp-action="Create"><i class="anticon anticon-plus-circle m-r-5"></i><span style="color: white">Thêm mới</span></a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Mã nhóm
+                </th>
+                <th>
+                    Mô tả
+                </th>
+                <th>
+                    Người tạo
+                </th>
+                <th>
+                    Trạng thái
+                </th>
+                <th>
+                    Ngày bắt đầu
+                </th>
+                <th>
+                    Ngày kết thúc
+                </th>
+                <th>Nghiệp vụ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                if (item.Status == true)
+                {
+                    <tr>
+                        <td>
+                            @item.GroupCode
+                        </td>
+                        <td>
+                            @item.Description
+                        </td>
+                        <td>
+                            @item.CreatedPerson
+                        </td>
+                        <td>
+                            @if (item.Status == true)
+                            {
+                                <a>Active</a>
+                            }
+                            else
+                            {
+                                <a>InActive</a>
+                            }
+                        </td>
+                        <td>
+                            @if (item.FromDate == null)
+                            {
+                                <a>Vô thời hạn</a>
+                            }
+                            else
+                            {
+                                <a>@item.FromDate?.ToString("dd/MM/yyyy")</a>
+                            }
+                        </td>
+                        <td>
+                            @if (item.ToDate == null)
+                            {
+                                <a>Vô thời hạn</a>
+                            }
+                            else
+                            {
+                                <a>@item.ToDate?.ToString("dd/MM/yyyy")</a>
+                            }
+                        </td>
+                        <td>
+                            <a class="btn-success btn" asp-action="Update" asp-route-id="@item.GroupId">Edit</a> |
+                            <a class="btn-danger btn" asp-action="Delete" asp-route-id="@item.GroupId">Xóa</a>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td>
+                            @item.GroupCode
+                        </td>
+                        <td>
+                            @item.Description
+                        </td>
+                        <td>
+                            @item.CreatedPerson
+                        </td>
+                        <td>
+                            @if (item.Status == true)
+                            {
+                                <a>Active</a>
+                            }
+                            else
+                            {
+                                <a>InActive</a>
+                            }
+                        </td>
+                        <td>
+                            @if (item.FromDate == null)
+                            {
+                                <a>Vô thời hạn</a>
+                            }
+                            else
+                            {
+                                <a>@item.FromDate?.ToString("dd/MM/yyyy")</a>
+                            }
+                        </td>
+                        <td>
+                            @if (item.ToDate == null)
+                            {
+                                <a>Vô thời hạn</a>
+                            }
+                            else
+                            {
+                                <a>@item.ToDate?.ToString("dd/MM/yyyy")</a>
+                            }
+                        </td>
+                        <td>
+                            <a class="btn-success btn" asp-action="Update" asp-route-id="@item.GroupId">Phục hồi</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</form>

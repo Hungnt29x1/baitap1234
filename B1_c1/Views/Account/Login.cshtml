@@ -1,0 +1,31 @@
+﻿@model object
+
+@{
+    ViewBag.Title = "Đăng nhập";
+}
+
+<h2>Đăng nhập</h2>
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+
+    <div class="form-group">
+        <label>Tên đăng nhập:</label>
+        @Html.TextBox("userName", null, new { @class = "form-control" })
+        @Html.ValidationMessage("userName")
+    </div>
+
+    <div class="form-group">
+        <label>Mật khẩu:</label>
+        @Html.Password("password", null, new { @class = "form-control" })
+        @Html.ValidationMessage("password")
+    </div>
+
+    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+}

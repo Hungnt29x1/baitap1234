@@ -1,0 +1,14 @@
+﻿@model DAL_B3.DomainClass.SMS
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Bạn có chắc chắn muốn xóa ??</h1>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="SmsId" />
+        <input type="submit" value="Xóa" class="btn btn-danger" /> |
+        <a asp-action="Index">Trở lại</a>
+    </form>

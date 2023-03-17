@@ -1,0 +1,37 @@
+﻿@model B3_C1.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-controller="Login" asp-action="Login">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="signin-box">
+        <h2 class="slim-logo" style="text-align:center;"><a href="index.html">ĐĂNG NHẬP<span>.</span></a></h2>
+        <span class="text-danger" style="justify-content:center;display: flex;">@ViewBag.Error</span>
+        <br />
+        <div class="form-group">
+            <label asp-for="Username" class="control-label">Username</label>
+            <input asp-for="Username" type="text" class="form-control" placeholder="Mời bạn nhập Username" onclick="Reset_input()">
+            <span id="wrongUsername" asp-validation-for="Username" class="text-danger"></span>
+        </div><!-- form-group -->
+        <div class="form-group mg-b-50">
+            <label asp-for="Password" class="control-label">Mật khẩu</label>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Mời bạn nhập mật khẩu" onclick="Reset_input()">
+            <span id="wrongPassword" asp-validation-for="Password" class="text-danger"></span>
+        </div><!-- form-group -->
+
+        <button class="btn btn-primary btn-block btn-signin">Đăng nhập</button>
+        <p class="mg-b-0" style="text-align: center;">
+            <a href="/doi-mat-khau.html" style="color: gray;">Đổi mật khẩu?</a>
+            <a asp-controller="Users" asp-action="SignUp">Đăng ký</a>
+        </p>
+    </div><!-- signin-box -->
+</form>
+<script>
+    function Reset_input() {
+        $("#wrongUsername").html('');
+        $("#wrongPassword").html('');
+    }
+</script>

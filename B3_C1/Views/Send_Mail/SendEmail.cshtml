@@ -1,0 +1,21 @@
+﻿@model EmailViewModel
+
+@if (ViewBag.Mgs != null)
+{
+    <h4>@ViewBag.Mgs</h4>
+}
+<form method="post" asp-action="SendEmail">
+    <div class="form-group">
+        <label for="toEmail">To:</label>
+        <input type="email" class="form-control" asp-for="ToEmail" required>
+    </div>
+    <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" class="form-control"  asp-for="Subject" required>
+    </div>
+    <div class="form-group">
+        <label for="body">Body:</label>
+        <textarea class="form-control"  asp-for="Body" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Gửi</button>
+</form>

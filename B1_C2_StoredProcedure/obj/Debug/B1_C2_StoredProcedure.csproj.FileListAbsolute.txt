@@ -1,0 +1,15 @@
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\bin\Debug\B1_C2_StoredProcedure.exe.config
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\bin\Debug\B1_C2_StoredProcedure.exe
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\bin\Debug\B1_C2_StoredProcedure.pdb
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.csproj.AssemblyReference.cache
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.csproj.SuggestedBindingRedirects.cache
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.Form1.resources
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.Properties.Resources.resources
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.csproj.GenerateResource.cache
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.csproj.CoreCompileInputs.cache
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.exe
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.pdb
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\bin\Debug\B1_C2_StoredProcedure.exe.manifest
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\bin\Debug\B1_C2_StoredProcedure.application
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.exe.manifest
+C:\Users\hung.nguyen13\Desktop\BaiTap\Bai1\B1_c1\B1_C2_StoredProcedure\obj\Debug\B1_C2_StoredProcedure.application

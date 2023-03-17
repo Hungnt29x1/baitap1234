@@ -1,0 +1,85 @@
+﻿@model IEnumerable<DAL_B3.DomainClass.SMS>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form>
+    <div class="row">
+        <div class="row m-b-30">
+            <div class="row">
+                <div class="col-3">
+                    <a>Tin nhắn:</a>
+                    <input type="text" class="form-control" placeholder="Mời bạn nhập..." id="keyword" name="keyword">
+                </div>
+                <div class="col-3">
+                    <a>Người gửi:</a>
+                    <select class="form-control" id="filter" name="filter" asp-items="@ViewBag.UserID">
+                        <option selected value="0">Mời bạn chọn</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <a>Từ:</a>
+                    <input type="datetime-local" id="tuNgay" name="tuNgay" />
+                </div>
+                <div class="col-3">
+                    <a>Đến:</a>
+                    <input type="datetime-local" id="denNgay" name="denNgay" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-2">
+        <div class="col ml-2">
+            <input type="submit" value="Tìm" class="btn btn-success" />
+        </div>
+        <div class="col" style="text-align: end;">
+            <a class="btn btn-primary" asp-action="Create"><i class="anticon anticon-plus-circle m-r-5"></i><span style="color: white">Thêm mới</span></a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Thời gian gửi
+                </th>
+                <th>
+                    Nội dung
+                </th>
+                <th>
+                    SĐT Nhận
+                </th>
+                <th>
+                    Account gửi
+                </th>
+                <th>Nghiệp vụ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.CreateSend?.ToString("dd/MM/yyyy")
+                    </td>
+                    <td>
+                        @item.Body
+                    </td>
+                    <td>
+                        @item.Phone
+                    </td>
+                   
+                    <td>
+                       @item.CreatedPerson
+                    </td>
+                    <td>
+                        <a class="btn-danger btn" asp-action="Delete" asp-route-id="@item.SmsId">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
+
